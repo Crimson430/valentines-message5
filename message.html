@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Valentine's Message</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #ffe6e6;
+        text-align: center;
+        padding-top: 50px;
+    }
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        50% {
+            transform: scale(1.1);
+            opacity: 0.7;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    .message {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #ff4081;
+        animation: pulse 2s infinite;
+    }
+    .heart {
+        color: red;
+        font-size: 30px;
+        animation: pulse 2s infinite;
+    }
+    .bear {
+        width: 100px;
+        margin: 20px auto;
+        animation: pulse 2s infinite;
+    }
+</style>
+</head>
+<body>
+<div class="message">
+    Will you be my Valentine?
+</div>
+<div class="heart">❤️</div>
+<img class="bear" src="https://i.postimg.cc/wjDxJgPf/teddy-bear.png" alt="bear">
+</body>
+</html>
